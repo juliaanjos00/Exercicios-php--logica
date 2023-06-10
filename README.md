@@ -1,6 +1,5 @@
 # Exercicios-php-novos-titas
 
-# exercicios-php-novos-titas 
 
 # COMO RODAR
 # Passo a passo
