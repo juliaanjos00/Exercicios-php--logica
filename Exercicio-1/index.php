@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/Exercicio-1/formulario.css">
+    <link rel="stylesheet" type="text/css" href="/Exercicio-1/style.css">
     <title>Exercicio-1</title>
   </head>
 
