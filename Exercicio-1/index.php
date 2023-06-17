@@ -31,7 +31,36 @@
             <input type="number" placeholder="Digite um número..." name="value2"/>
             <p><input type="submit" name="enviar" value="Enviar"/></p>
         </form>
-        </div> 
+        </div>
+        
+        <?php
+         
+           /**
+          * Exercise 1
+         */
+
+        if(isset($_POST['value1']) && ($_POST['value2'])) {
+            
+          $value1 = $_POST['value1']; 
+          $value2 = $_POST['value2'];
+
+          $sum = $value1 + $value2;
+
+          if($sum > 20)
+             $sum = $sum + 8;
+
+          if ($sum <= 20) 
+             $sum = $sum - 5;
+
+          echo 'Resultado: '. $sum . "\n"; 
+          }
+
+
+
+
+         ?>
+
+
 
       </fieldset>
      </body>
