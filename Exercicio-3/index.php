@@ -20,9 +20,14 @@
               <form id="formulario" action="/Exercicio-3/index.php" method="POST">
                     <label for="text">Nome</label>
                     <input type="text" class= input name="nome"  id="Nome"placeholder="Nome..."/>
-                    <div class="input-field"></div>
-                    <label for="text">Sexo</label>     
-                    <input type="text" class= input name="sexo"  id="Sexo"  placeholder="Sexo..."/>
+                    <div class="ls-custom-select">
+                    <select class="ls-custom-select">
+                    <option>Gênero</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Outro</option>
+                    </select>
+                    </div>
                     <div class="input-field"></div>
                     <label for="number">Idade</label>  
                     <input type="number" class=input name="idade" value="<?= $idade ?>" id="idade" placeholder="Idade..."/>
