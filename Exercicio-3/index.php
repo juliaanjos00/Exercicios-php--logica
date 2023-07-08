@@ -19,14 +19,19 @@
                 
               <form id="formulario" action="/Exercicio-3/index.php" method="POST">
                     <label for="text">Nome</label>
-                    <input type="text" class= input name="nome" value="<?= $nome ?>" id="Nome"placeholder="Nome..."/>
-                    <div class="input-field"><br /></div>
-                    <label for="text">Sexo</label><br />      
-                    <input type="text" class= input name="sexo" value="<?= $sexo ?>" id="Sexo"  placeholder="Sexo..."/>
-                    <div class="input-field"><br /></div>
-                    <label for="number">Idade</label><br />  
+                    <input type="text" class= input name="nome"  id="Nome"placeholder="Nome..."/>
+                    <div class="ls-custom-select">
+                    <select class="ls-custom-select">
+                    <option>Gênero</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Outro</option>
+                    </select>
+                    </div>
+                    <div class="input-field"></div>
+                    <label for="number">Idade</label>  
                     <input type="number" class=input name="idade" value="<?= $idade ?>" id="idade" placeholder="Idade..."/>
-                    <div class="underline"></div><br />
+                    <div class="underline"></div>
                     <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
               </form>
              </div>

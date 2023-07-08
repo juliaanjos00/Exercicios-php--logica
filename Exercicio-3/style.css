@@ -36,6 +36,13 @@ body{
     margin: 0px 0px 12px -5px;
 }
 
+.ls-custom-select{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px #6f7e8a solid;
+    padding: 2px;
+}
+
 .botao{
     padding: 14px;
     border-radius: 4px;  
