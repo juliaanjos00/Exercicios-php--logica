@@ -20,6 +20,7 @@
               <form id="formulario" action="/Exercicio-3/index.php" method="POST">
                     <label for="text">Nome</label>
                     <input type="text" class= input name="nome"  id="Nome"placeholder="Nome..."/>
+                    <label for="select">Gênero</label>  
                     <div class="ls-custom-select">
                     <select class="ls-custom-select">
                     <option>Gênero</option>
@@ -33,7 +34,24 @@
                     <input type="number" class=input name="idade" value="<?= $idade ?>" id="idade" placeholder="Idade..."/>
                     <div class="underline"></div>
                     <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
-              </form>
+              
+                    <?php
+                         if(isset($_POST['nome']) && ($_POST['select']) && ($_POST['idade'])     ) {                          
+                            $nome= $_POST['nome'];
+                            $select= $_POST['select'];
+                            $idade= $_POST['idade'];
+
+                            if ($idade < 25 && $option=="feminino") {
+                                echo $nome." ---VOCÊ FOI ACEITA</p>";
+                            } else {
+                            echo $nome." --- NAO ACEITA,PROJETO DESTINADO A PESSOAS DO GENERO FEMININO</p>";
+                            }
+                          }
+                    ?>
+                      
+              
+              
+                </form>
              </div>
     
         </body>
