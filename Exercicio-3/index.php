@@ -22,7 +22,7 @@
                     <input type="text" class= input name="nome"  id="Nome"placeholder="Nome..."/>
                     <label for="select">Gênero</label>  
                     <div class="ls-custom-select">
-                    <select class="ls-custom-select">
+                    <select name="genero" class="ls-custom-select">
                     <option>Gênero</option>
                     <option>Feminino</option>
                     <option>Masculino</option>
@@ -36,15 +36,15 @@
                     <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
               
                     <?php
-                         if(isset($_POST['nome']) && ($_POST['select']) && ($_POST['idade'])     ) {                          
+                         if(isset($_POST['nome']) && ($_POST['genero']) && ($_POST['idade'])     ) {                          
                             $nome= $_POST['nome'];
-                            $select= $_POST['select'];
+                            $genero= $_POST['genero'];
                             $idade= $_POST['idade'];
 
-                            if ($idade < 25 && $option=="feminino") {
-                                echo $nome." ---VOCÊ FOI ACEITA</p>";
+                            if ($idade < 25 && $genero="feminino") {
+                                echo $nome. "-- VOCÊ FOI ACEITA.</p>";
                             } else {
-                            echo $nome." --- NAO ACEITA,PROJETO DESTINADO A PESSOAS DO GENERO FEMININO</p>";
+                            echo $nome. "--NAO ACEITA,PROJETO DESTINADO A PESSOAS DO GENERO FEMININO E MENORES DE 25 ANOS.";
                             }
                           }
                     ?>
