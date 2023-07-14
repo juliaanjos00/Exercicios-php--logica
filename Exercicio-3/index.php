@@ -17,16 +17,16 @@
                         imprimir nome e a mensagem: NÃO ACEITA.
                     </h3>
                 
-              <form id="formulario" action="/Exercicio-3/index.php" method="POST">
+                <form id="formulario" action="/Exercicio-3/index.php" method="POST">
                     <label for="text">Nome</label>
                     <input type="text" class= input name="nome"  id="Nome"placeholder="Nome..."/>
                     <label for="select">Gênero</label>  
                     <div class="ls-custom-select">
                     <select name="genero" class="ls-custom-select">
-                    <option value="genero">Gênero</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="outro">Outro</option>
+                        <option value="genero">Gênero</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
                     </select>
                     </div>
                     <div class="input-field"></div>
@@ -35,36 +35,31 @@
                     <div class="underline"></div>
                     <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
               
-                    <?php                         
-                            $nome= $_POST['nome'];
-                            $genero= $_POST['genero'];
-                            $idade= $_POST['idade'];
+                     <?php                         
+                        $nome= $_POST['nome'];
+                        $genero= $_POST['genero'];
+                        $idade= $_POST['idade'];
 
-                            if ($idade < 25) {
-                                echo $nome;
+                        if ($idade < 25) {
+                            echo $nome;
                             }  
-                        else {
+                            else {
                             echo $nome. "--NAO ACEITA,PROJETO DESTINADO A PESSOAS DO GENERO FEMININO E MENORES DE 25 ANOS.";
-                            }
+                        }
 
-                            switch($genero){
-                                case 'feminino':
-                                    echo "--VOCÊ FOI ACEITA";
-                                    break;
-                                    case 'masculino':
-                                        echo "--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
-                                        break;
-                                        case 'outro':
-                                            echo  "--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
-
-                                           
-                                   
-                
-                                        }
-                                    
-
-                    ?>
-                      
+                        switch($genero){
+                            case 'feminino && idade < 25':
+                             echo "--VOCÊ FOI ACEITA";
+                             break;
+                             case 'masculino':
+                             echo "--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
+                             break;
+                             case 'outro':
+                              echo  "--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
+                        }
+                                
+                     ?>
+                    
               
               
                 </form>
