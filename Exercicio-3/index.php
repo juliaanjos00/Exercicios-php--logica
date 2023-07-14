@@ -17,7 +17,7 @@
                         imprimir nome e a mensagem: NÃO ACEITA.
                     </h3>
                 
-                <form id="formulario" action="/Exercicio-3/index.php" method="POST">
+              <form id="formulario" action="/Exercicio-3/index.php" method="POST">
                     <label for="text">Nome</label>
                     <input type="text" class= input name="nome"  id="Nome"placeholder="Nome..."/>
                     <label for="select">Gênero</label>  
@@ -35,34 +35,29 @@
                     <div class="underline"></div>
                     <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
               
-                     <?php                         
-                        $nome= $_POST['nome'];
-                        $genero= $_POST['genero'];
-                        $idade= $_POST['idade'];
+                 <?php                         
+                    $nome= $_POST['nome'];
+                    $genero= $_POST['genero'];
+                    $idade= $_POST['idade'];
 
-                        if ($idade < 25) {
-                            echo $nome;
-                            }  
-                            else {
-                            echo $nome. "--NAO ACEITA,PROJETO DESTINADO A PESSOAS DO GENERO FEMININO E MENORES DE 25 ANOS.";
-                        }
-
-                        switch($genero){
-                            case 'feminino && idade < 25':
-                             echo "--VOCÊ FOI ACEITA";
-                             break;
-                             case 'masculino':
-                             echo "--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
-                             break;
-                             case 'outro':
-                              echo  "--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
-                        }
-                                
-                     ?>
-                    
-              
-              
-                </form>
+                    if ($idade > 25) {
+                     echo "$nome-- NÃO ACEITA PROJETO DESTINADO A MENORES DE 25 ANOS.";
+                    }  
+                     
+                    switch($genero){
+                     case 'feminino':
+                      echo "$nome--VOCÊ FOI ACEITA";
+                     break;
+                     case 'masculino':
+                      echo "$nome--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
+                     break;
+                     case 'outro':
+                      echo  "$nome--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
+                    }
+                                    
+                 ?>
+                   
+              </form>
              </div>
     
         </body>
