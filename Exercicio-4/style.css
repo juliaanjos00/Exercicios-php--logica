@@ -9,7 +9,6 @@ body{
     background: linear-gradient(-45deg, #2745b1 , #8ce2ee, #ec6d5c);
 }
 
-
 .form{
     position: relative;
     top: 50%;
@@ -43,6 +42,4 @@ body{
     box-shadow: #8b80f9 0px 0px 12px 1px inset,
     #8b80f9 0px 0px 12px 1px;  
     border-radius: 15px;
-
 }
-
