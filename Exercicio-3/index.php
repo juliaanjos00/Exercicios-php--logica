@@ -35,27 +35,22 @@
                     <div class="underline"></div>
                     <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
               
-                 <?php                         
+               <?php   
+                  if(isset($_POST['nome']) && ($_POST['genero']) && ($_POST['idade'])) {                        
                     $nome= $_POST['nome'];
                     $genero= $_POST['genero'];
                     $idade= $_POST['idade'];
 
-                    if ($idade > 25) {
-                     echo "$nome-- NÃO ACEITA PROJETO DESTINADO A MENORES DE 25 ANOS.";
-                    }  
-                     
-                    switch($genero){
-                     case 'feminino':
-                      echo "$nome--VOCÊ FOI ACEITA";
-                     break;
-                     case 'masculino':
-                      echo "$nome--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
-                     break;
-                     case 'outro':
-                      echo  "$nome--NÃO ACEITA,PROJETO DESTINADO A PESSOAS NO GÊNERO FEMININO";
-                    }
+                    if ($genero=="feminino" && $idade <= 25) {
+                     echo "$nome--VOCÊ FOI ACEITA!";
+                     }
+                     else{
+                     echo "$nome --NÃO ACEITA,PROJETO DESTINADO A PESSOAS DO GÊNERO FEMININO E MENORES DE 25 ANOS";
+                     }
+
+                  } 
                                     
-                 ?>
+                ?>
                    
               </form>
              </div>
