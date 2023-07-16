@@ -20,6 +20,7 @@
               <form id="formulario" action="/Exercicio-3/index.php" method="POST">
                     <label for="text">Nome</label>
                     <input type="text" class= input name="nome"  id="Nome"placeholder="Nome..."/>
+<<<<<<< HEAD
                     <label for="select">Gênero</label>  
                     <div class="ls-custom-select">
                     <select name="genero" class="ls-custom-select">
@@ -27,10 +28,19 @@
                         <option value="feminino">Feminino</option>
                         <option value="masculino">Masculino</option>
                         <option value="outro">Outro</option>
+=======
+                    <div class="ls-custom-select">
+                    <select class="ls-custom-select">
+                    <option>Gênero</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Outro</option>
+>>>>>>> main
                     </select>
                     </div>
                     <div class="input-field"></div>
                     <label for="number">Idade</label>  
+<<<<<<< HEAD
                     <input type="number" class=input name="idade" value="$idade"  placeholder="Idade..."/>
                     <div class="underline"></div>
                     <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
@@ -52,6 +62,11 @@
                                     
                 ?>
                    
+=======
+                    <input type="number" class=input name="idade" value="<?= $idade ?>" id="idade" placeholder="Idade..."/>
+                    <div class="underline"></div>
+                    <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/>
+>>>>>>> main
               </form>
              </div>
     
