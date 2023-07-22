@@ -18,12 +18,36 @@
              <form id="form" action="/Exercicio-4/index.php" method="post">
                 <div class="input-field"></div>
                 <label for="number" class="sub">Números:</label>
-                <input type="number" class="input" name="value 1" id="valor 1" placeholder="Escolha um valor..."/>
-                <input type="number" class="input" name="value 2" id="valor 2" placeholder="Escolha um valor..."/>
-                <input type="number" class="input" name="value 3" id="valor 3" placeholder="Escolha um valor..."/>
+                <input type="number" class="input" name="value1" id="value1" placeholder="Escolha um valor..."/>
+                <input type="number" class="input" name="value2" id="value2" placeholder="Escolha um valor..."/>
+                <input type="number" class="input" name="value3" id="value3" placeholder="Escolha um valor..."/>
                 <div class="underline"></div>
                 <input type="submit" class="button" name="enviar" value="Enviar"/> 
              </form>
+             <php    
+             if (isset( $_POST["value1" ] $_POST ["value2" ] $_POST ["value3" ])){
+            
+               $value1= $_POST ["value1"];
+               $value2= $_POST ["value2"];
+               $value3= $_POST ["value1"];
+
+               if ($value1 > $value2 && $value1 > $value3){
+               echo "$value1 $value2 $value3" ;
+               }
+
+               if ($value2 > $value1 && $value2 > $value3){
+               echo "$value2 $value1 $value3" ;
+               }
+
+               if ($value3 > $value1 && $value3 > $value2){
+               echo "$value3 $value1 $value2" ;
+               }
+               
+            }
+               ?> 
+
+
+             
       </body>         
 
 </html>                    
