@@ -24,23 +24,23 @@
                 <div class="underline"></div>
                 <input type="submit" class="button" name="enviar" value="Enviar"/> 
              </form>
-             <php    
-             if (isset( $_POST['value1' ]  && $_POST ['value2' ] &&  $_POST ['value3' ])){
+             <?php   
+             if (isset( $_POST['value1' ]) && isset($_POST ['value2' ]) && isset($_POST ['value3' ])){
             
-               $value1= $_POST ['value1'];
-               $value2= $_POST ['value2'];
-               $value3= $_POST ['value1'];
+               $value1 = $_POST['value1' ];
+               $value2 = $_POST['value2' ];
+               $value3 = $_POST['$value3' ];
 
-               if ($value1 > $value2 && $value1 > $value3){
-               echo "$value1 $value2 $value3" ;
+               if ($value1 >= $value2 && $value1 >= $value3){
+                echo "$value1 $value2 $value3" ;
                }
 
-               if ($value2 => $value1 && $value2 => $value3){
-               echo "$value2 $value1 $value3" ;
+               if ($value2 >= $value1 && $value2 >= $value3){
+                  echo "$value2 $value1 $value3" ;
                }
 
-               if ($value3 => $value1 && $value3 => $value2){
-               echo "$value3 $value1 $value2" ;
+               if ($value3 >= $value1 && $value3 >= $value2){
+                  echo "$value3 $value1 $value2" ;
                }
                
             }
