@@ -18,12 +18,52 @@
                 <form id="form" action="/Exercicio-5/index.php" method="post">
                   <div class="input-field"></div>
                   <label for="number">Escolha os números:</label>
-                  <input type="number" class="input" name="value1" id="value1" placeholder="Escolha um valor..."/>
-                  <input type="number" class="input" name="value2" id="value2" placeholder="Escolha um valor..."/>
-                  <input type="number" class="input" name="value3" id="value3" placeholder="Escolha um valor..."/>
+                  <input type="number" class="input" name="ladoA" id="ladoA" placeholder="Escolha um valor..."/>
+                  <input type="number" class="input" name="ladoB" id="ladoB" placeholder="Escolha um valor..."/>
+                  <input type="number" class="input" name="ladoC" id="ladoC" placeholder="Escolha um valor..."/>
                   <div class="underline"></div>
                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
               </form>
+             
+             <?php
+               if (isset( $_POST['ladoA' ]) && isset($_POST ['ladoB' ]) && isset($_POST ['ladoC' ])){
+               
+                $ladoA= $_POST['ladoA'];
+                $ladoB= $_POST['ladoB'];
+                $ladoC= $_POST['ladoC'];
 
+               
+                switch($ladoA && $ladoB && $ladoC ){
+                  case 'ladoA == ladoB == ladoC':
+                   echo "TRIÂNGULO EQUÍLATERO";
+                  break;
+                  case 'ladoA = ladoC == ladoA':
+                   echo "TRIÂNGULO ESCALENO";
+                  break;
+                  case 'ladoA == ladoB && ladoA == ladoc':
+                   echo  "TRIÂNGULO ISÓSCELES";
+                 }
+
+
+
+
+
+
+
+               }
+
+
+             ?>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
        </body>  
 </html>
