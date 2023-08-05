@@ -9,7 +9,7 @@
   </head>
        <body>
              <div class="form">
-             <div class="title"> <h1> Exercício 5<h1> </div>
+             <div class="title">  Exercício 5 </div>
                 <h3 id="text">Ler 3 números, os possíveis lados de um
                   triângulo, e imprimir a classificação de
                   acordo com tamanho dos lados
@@ -23,47 +23,29 @@
                   <input type="number" class="input" name="ladoC" id="ladoC" placeholder="Escolha um valor..."/>
                   <div class="underline"></div>
                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
-              </form>
+                </form>
              
-             <?php
-               if (isset( $_POST['ladoA' ]) && isset($_POST ['ladoB' ]) && isset($_POST ['ladoC' ])){
+                 <?php
+                  if (isset( $_POST['ladoA' ]) && isset($_POST ['ladoB' ]) && isset($_POST ['ladoC' ])){
+                    
+                      $ladoA= $_POST['ladoA'];
+                      $ladoB= $_POST['ladoB'];
+                      $ladoC= $_POST['ladoC'];
+
+                    
+                      switch($ladoA && $ladoB && $ladoC ){
+                        case 'ladoA == ladoB == ladoC':
+                        echo "TRIÂNGULO EQUÍLATERO";
+                        break;
+                        case 'ladoA = ladoC == ladoA':
+                        echo "TRIÂNGULO ESCALENO";
+                        break;
+                        case 'ladoA == ladoB && ladoA == ladoc':
+                        echo  "TRIÂNGULO ISÓSCELES";
+                      }
+                  }
+                 ?>
                
-                $ladoA= $_POST['ladoA'];
-                $ladoB= $_POST['ladoB'];
-                $ladoC= $_POST['ladoC'];
-
-               
-                switch($ladoA && $ladoB && $ladoC ){
-                  case 'ladoA == ladoB == ladoC':
-                   echo "TRIÂNGULO EQUÍLATERO";
-                  break;
-                  case 'ladoA = ladoC == ladoA':
-                   echo "TRIÂNGULO ESCALENO";
-                  break;
-                  case 'ladoA == ladoB && ladoA == ladoc':
-                   echo  "TRIÂNGULO ISÓSCELES";
-                 }
-
-
-
-
-
-
-
-               }
-
-
-             ?>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             </div>
        </body>  
 </html>
