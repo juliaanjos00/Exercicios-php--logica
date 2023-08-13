@@ -27,9 +27,9 @@
              <?php   
              if (isset( $_POST['value1' ]) && isset($_POST ['value2' ]) && isset($_POST ['value3' ])){
             
-               $value1 = $_POST['value1' ];
-               $value2 = $_POST['value2' ];
-               $value3 = $_POST['$value3' ];
+               $value1 =$_POST['value1' ];
+               $value2 =$_POST['value2' ];
+               $value3 =$_POST['value3' ];
 
                if ($value1 >= $value2 && $value1 >= $value3){
                 echo "$value1 $value2 $value3" ;
