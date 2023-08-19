@@ -19,7 +19,7 @@
                 <form id="form" action="/Exercicio-6/index.php" method="post">
                     <div class="input-field"></div>
                     <label for="number" class="sub">Mês:</label>
-                    <input type="number" class="input" name="value" id="value" placeholder="Escolha um valor..."/>
+                    <input type="number" class="input" name="mes" id="value" placeholder="Escolha um valor..."/>
                     <div class="underline"></div>
                     <input type="submit" class="button" name="enviar" value="Enviar"/> 
                 </form>
