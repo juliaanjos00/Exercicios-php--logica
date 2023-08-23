@@ -3,3 +3,10 @@ body{
     padding: 0;
     background: linear-gradient(#2B124C #c3b8d1 #F5D7DB);
 }
+
+.slider{
+    width: 800px;
+    height: 500px;
+
+}
+
