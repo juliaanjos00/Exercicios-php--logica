@@ -10,7 +10,10 @@
 
 3-Por fim entre no navegador e digite: 'http://localhost:8181'.
 
-#PARA ACESSAR O CODECEPTION
+# PARA ACESSAR O CODECEPTION
+
 1- Acesse a pasta do projeto.
+
 2-Rode o docker com o seguinte comando: docker compose up.
+
 3-Rode este comando: docker compose exec php-apache bash.
