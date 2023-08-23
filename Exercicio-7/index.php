@@ -17,9 +17,8 @@
                              conforme mostrado a seguir. Considerar que
                              o professor tem 10 dias para devolver o livro
                              o aluno somente 3 dias
-                </div>
 
-                <form id="form" action="/Exercicio-7/index.php" method="post">
+                 <form id="form" action="/Exercicio-7/index.php" method="post">
                     <div class="input-field"></div>
                     <label for="number" class="sub">Professor(a):</label>
                     <input type="number" class="input" name="Professor" id="value" placeholder="..."/>
@@ -29,4 +28,40 @@
                     <input type="number" class="input" name="Livro" id="value" placeholder="..."/>
                     <div class="underline"></div>
                     <input type="submit" class="button" name="enviar" value="Enviar"/> 
-                </form>
+                 </form>
+                </div>
+
+                 <div class="books">
+                    <img
+                     src="img1" width="50px"
+                     />
+                     <img
+                     src="img2"  width="50px"
+                     />
+                     <img
+                     src="img3"  width="50px"
+                     />
+                     <img
+                     src="img4"  width="50px"
+                     />
+                     <img
+                     src="img5"  width="50px"
+                     />
+                     <img
+                     src="img6"  width="50px"
+                     />
+                     <img
+                     src="img7"  width="50px"
+                     />
+                     <img
+                     src="img8"  width="50px"
+                     />
+                     <img
+                     src="img9"  width="50px"
+                     />
+                     <img
+                     src="img10"  width="50px"
+                     />
+ 
+                </div>
+               
