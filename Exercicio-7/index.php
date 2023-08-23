@@ -8,6 +8,75 @@
     <title>Exercicio-7</title>
  </head>
        <body>
+       <div class="slider">
+       <div class="slides">
+         <input type="radio" name="radio-btn" id="radio1">
+         <input type="radio" name="radio-btn" id="radio2">
+         <input type="radio" name="radio-btn" id="radio3">
+         <input type="radio" name="radio-btn" id="radio4">
+         <input type="radio" name="radio-btn" id="radio5">
+         <input type="radio" name="radio-btn" id="radio6">
+         <input type="radio" name="radio-btn" id="radio7">
+         <input type="radio" name="radio-btn" id="radio8">
+         <input type="radio" name="radio-btn" id="radio9">
+         <input type="radio" name="radio-btn" id="radio10">
+
+                  <div class="books">
+                    <img src="./img1"/>
+                   </div>
+
+                  <div class="books">
+                    <img src="./img2"/>
+                   </div>
+
+                  <div class="books">
+                    <img src="./img3"/>
+                   </div>
+
+                  <div class="books">
+                    <img src="./img4" />
+                   </div>
+
+                  <div class="books">
+                    <img src="./img5"/>
+                   </div>
+
+                  <div class="books">
+                    <img src="./img6"/>
+                   </div>
+
+                  <div class="books">
+                    <img src="./img7"/>
+                   </div>
+                     
+                  <div class="books">
+                    <img src="./img8"/>
+                   </div>
+
+                  <div class="books">
+                    <img src="./img9" />
+                   </div>
+
+                  <div class="books">
+                    <img src="./img10" />
+                   </div>
+
+                   <div class="navegation-bar">
+                     <label for="radio1">Botao 1</label>
+                     <label for="radio2">Botao 2</label>
+                     <label for="radio3">Botao 3</label>
+                     <label for="radio4">Botao 4</label>
+                     <label for="radio5">Botao 5</label>
+                     <label for="radio6">Botao 6</label>
+                     <label for="radio7">Botao 7</label>
+                     <label for="radio8">Botao 8</label>
+                     <label for="radio9">Botao 9</label>
+                     <label for="radio10">Botao 10</label>
+                  </div>
+                  
+                </div>  
+               </div>
+
             <div class="form">
                 <h1 class="title"> Exercício 7</h1> 
                 <div class="text">A biblioteca de uma universidade deseja fazer
@@ -31,37 +100,5 @@
                  </form>
                 </div>
 
-                 <div class="books">
-                    <img
-                     src="img1" width="50px"
-                     />
-                     <img
-                     src="img2"  width="50px"
-                     />
-                     <img
-                     src="img3"  width="50px"
-                     />
-                     <img
-                     src="img4"  width="50px"
-                     />
-                     <img
-                     src="img5"  width="50px"
-                     />
-                     <img
-                     src="img6"  width="50px"
-                     />
-                     <img
-                     src="img7"  width="50px"
-                     />
-                     <img
-                     src="img8"  width="50px"
-                     />
-                     <img
-                     src="img9"  width="50px"
-                     />
-                     <img
-                     src="img10"  width="50px"
-                     />
- 
-                </div>
+                
                
