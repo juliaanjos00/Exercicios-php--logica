@@ -21,31 +21,31 @@
           <input type="radio" class="radio" name="radio-btn" id="radio8">
 
            <div class="slide first">
-            <img src="./img1">
+            <img src="imgs/img1">
             </div>
 
            <div class="slide">
-            <img src="./img2"/>
+            <img src="imgs/img2"/>
             </div>
 
            <div class="slide">
-            <img src="./img3"/>
+            <img src="imgs/img3"/>
             </div>
 
            <div class="slide">
-            <img src="./img4" />
-            </div>
-
-           <div class="books">
-            <img src="./img5"/>
+            <img src="imgs/img4" />
             </div>
 
            <div class="slide">
-            <img src="./img6"/>
+            <img src="imgs/img5"/>
             </div>
 
            <div class="slide">
-            <img src="./img7"/>
+            <img src="imgs/img6"/>
+            </div>
+
+           <div class="slide">
+            <img src="imgs/img7"/>
             </div>
               
              <div class="navigation-bar">
@@ -71,20 +71,43 @@
                         o professor tem 10 dias para devolver o livro
                         o aluno somente 3 dias. </div>
               <form id="form" action="/Exercicio-7/index.php" method="post">
-                <div class="input-field"></div>
-                <label for="text" class="sub">Professor(a):</label>
-                <input type="text" class="placeholder" name="Professor" id="value" placeholder="..."/>
-                <label for="text" class="sub">Aluno(a):</label>
-                <input type="text" class="placeholder" name="Aluno" id="value" placeholder="..."/>
-                <label for="text" class="sub">Livro:</label>
-                <input type="text" class="placeholder" name="Livro" id="value" placeholder="..."/>
-                <div class="underline"></div>
-                <input type="submit" class="button" name="enviar" value="Enviar"/> 
+                    <label for="select" class="sub">Selecione:</label>  
+                    <div class="ls-custom-select">
+                    <select  class="ls-custom-select">
+                        <option value="professor">Professor</option>
+                        <option value="aluno">Aluno</option>
+                    </select>
+                    </div>
+                    <div class="input-field"></div>  
+                    <label for="text" class="sub">Livro:</label>  
+                    <input type="text" class="placeholder" name="livro" id="livro"  placeholder="..."/>
+                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
              </form>
+
+             <?php
+ 
+ if(isset($_POST['professor']) && ($_POST['aluno']) && ($_POST['livro'])) {    
+
+  $professor= $_POST['professor'];
+  $aluno= $_POST['aluno'];
+  $livro= $_POST['livro'];
+
+  if ($professor=="professor") {
+  echo "$professor-- 10 DIAS PARA DEVOLUÇÃO DO $livro!";
+  }
+ 
+  if ($aluno=="aluno") {
+    echo "$aluno-- 3 DIAS PARA DEVOLUÇÃO DO $livro!";
+    }
+
+} 
+        ?>
+
+
+
+
         </div>
                 
   </body>        
 </html>
               
-
-        
