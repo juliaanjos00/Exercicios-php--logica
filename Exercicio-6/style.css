@@ -1,7 +1,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(-45deg, #0d101b , #9781ac, #cc9c96);
+    background: linear-gradient(-45deg, #0d101b , #9781ac);
 }
 
 .form{
@@ -10,7 +10,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(241, 233, 228);
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 60px;
     font-family: initial;
     width: min-content;
@@ -21,6 +21,7 @@ body{
 .title{
     font-size: 1.9em;
     font-family: initial;
+    color: #070242;
 }
 
 .text{
@@ -36,7 +37,8 @@ body{
 .input{
     min-width: 280px;
     border-radius: 22px;
-    border: 2px #6f7e8a solid;
+    border: 5px #252774;
+    border-style: outset;
     padding: 5px;
     margin: 0px 0px 12px -5px;
 }
@@ -45,14 +47,14 @@ body{
     position: relative;
     display:inline-block;
     margin: 15px;
-    padding: 15px 30px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
     text-decoration: none;
     color: #ffffff;
     background: #8b80f9;
-    border: none;
+    border: double;
     border-radius: 10px;
     cursor: pointer;
     transition: ease-out 0.5s;
