@@ -77,13 +77,10 @@ body{
     margin-left: -56%;
 }
 
-
-
 .navigation-bar{
     position: absolute;
     bottom: 20px;
-
-     display: flex;
+    display: flex;
     left: 50%;
     transform: translate(-50%);
 }
@@ -121,18 +118,28 @@ body{
     color: #2b344b;
 }
 
+.ls-custom-select{
+    border: outset;
+    min-width: 300px;
+    border-radius: 20px;
+    border-color: rgb(8, 8, 63);
+   
+}
+
+.placeholder{
+    border: outset;
+    min-width: 280px;
+    border-radius: 22px;
+    padding: 5px;
+    border-color: #0a0724;
+
+}
+
 .sub{
     font-size: 1.5em;
     font-family: initial;
 }
 
-.placeholder{
-    min-width: 280px;
-    border-radius: 22px;
-    border: 2px #6f7e8a solid;
-    padding: 5px;
-    margin: 0px 0px 12px -5px;
-}
 
 .button{
     padding: 14px;
