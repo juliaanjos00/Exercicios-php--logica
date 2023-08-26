@@ -40,7 +40,7 @@
                         case 'ladoA = ladoC == ladoA':
                         echo "TRIÂNGULO ESCALENO";
                         break;
-                        case 'ladoA == ladoB && ladoA == ladoC':
+                        case 'ladoA == ladoB && ladoA == ladoc':
                         echo  "TRIÂNGULO ISÓSCELES";
                       }
                   }
