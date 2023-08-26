@@ -14,9 +14,9 @@ body{
 }
 
 .titles{
-    position: center;
-    font-family: Arial;
-    font-size: 400%;
+    position:relative;
+    font-family:initial;
+    font-size: 200%;
     
 }
 
@@ -31,8 +31,8 @@ body{
 
 .slides{
     display: flex;
-    width: 1000%;
-    height: 100%;
+    width: 800%;
+    height: 80%;
 }
 
 .slide{
@@ -50,40 +50,33 @@ body{
 }
 
 #radio2:checked ~ .first{
-    margin-left: -10%;
+    margin-left: -8%;
 }
 
 #radio3:checked ~ .first{
-    margin-left: -20%;
+    margin-left: -16%;
 }
 
 #radio4:checked ~ .first{
-    margin-left: -30%;
+    margin-left: -24%;
 }
 
 #radio5:checked ~ .first{
-    margin-left: -40%;
+    margin-left: -32%;
 }
 
 #radio6:checked ~ .first{
-    margin-left: -50%;
+    margin-left: -40%;
 }
 
 #radio7:checked ~ .first{
-    margin-left: -60%;
+    margin-left: -48%;
 }
 
 #radio8:checked ~ .first{
-    margin-left: -70%;
+    margin-left: -56%;
 }
 
-#radio9:checked ~ .first{
-    margin-left: -80%;
-}
-
-#radio10:checked ~ .first{
-    margin-left: -90%;
-}
 
 
 .navigation-bar{
@@ -117,17 +110,14 @@ body{
 }
 
 .form{
-   
     position: relative;
     top: 100%;
-    left: 100%;
-    transform: translate(-100%, -100%);
+    height: 70%;
     background: rgb(241, 233, 228);
     border-radius: 10px;
     padding: 60px;
     font-family: initial;
     width: min-content;
-
     color: #2b344b;
 }
 
