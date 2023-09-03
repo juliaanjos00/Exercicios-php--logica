@@ -81,33 +81,27 @@
                     <div class="input-field"></div>  
                     <label for="text" class="sub">Livro:</label>  
                     <input type="text" class="placeholder" name="livro" id="livro"  placeholder="..."/>
-                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
+                    <input type="submit" class="button" name="enviar" value="Enviar"/> 
              </form>
 
              <?php
- 
- if(isset($_POST['professor']) && ($_POST['aluno']) && ($_POST['livro'])) {    
+                if(isset($_POST['professor']) && ($_POST['aluno']) && ($_POST['livro'])) {    
 
-  $professor= $_POST['professor'];
-  $aluno= $_POST['aluno'];
-  $livro= $_POST['livro'];
+                  $professor= $_POST['professor'];
+                  $aluno= $_POST['aluno'];
+                  $livro= $_POST['livro'];
 
-  if ($professor=="professor") {
-  echo "$professor-- 10 DIAS PARA DEVOLUÇÃO DO $livro!";
-  }
- 
-  if ($aluno=="aluno") {
-    echo "$aluno-- 3 DIAS PARA DEVOLUÇÃO DO $livro!";
-    }
+                  if ($professor=="professor") {
+                  echo "$professor-- 10 DIAS PARA DEVOLUÇÃO DO $livro!";
+                  }
+                
+                  if ($aluno=="aluno") {
+                    echo "$aluno-- 3 DIAS PARA DEVOLUÇÃO DO $livro!";
+                    }
 
-} 
-        ?>
-
-
-
+                } 
+             ?>
 
         </div>
-                
   </body>        
 </html>
-              
