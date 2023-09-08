@@ -43,7 +43,7 @@ body{
 .button{
    border: 5px solid #2c043f;
    border-radius: 5px;
-   padding: 2rem, 3rem;
+   padding: 2px, 3px;
    display: inline-block;
    font-family: unset;
    user-select: none;
