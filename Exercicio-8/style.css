@@ -43,14 +43,11 @@ body{
 .button{
    border: 5px solid #2c043f;
    border-radius: 5px;
-   padding: 2px, 3px;
    display: inline-block;
    font-family: unset;
-   user-select: none;
    color: #010307;
    box-shadow: #8194b8 4px 4px 0px;
-   transition: all .195s ease-in-out;
-   cursor: pointer;
+   transition: all .195s;
 }
 
 .button:hover{
