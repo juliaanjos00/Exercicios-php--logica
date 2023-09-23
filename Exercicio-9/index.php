@@ -21,6 +21,20 @@
                   <div class="underline"></div>
                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
                 </form>
+                
+                    <?php
+                         if (isset($_POST["number"])) {
+                              $repeat = $_POST["number"];
+
+                              if (is_numeric($repeat)) {
+                              for ($i = 0; $i < $repeat; $i++) {
+                                   echo  "<p>Sol</p>";
+                              }
+                              } 
+                         }    
+                    ?>
+
+
                </div> 
             </div>
        </body>  
