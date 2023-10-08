@@ -22,5 +22,29 @@
                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
                 </form>
 
+                <?php
+
+                  if (isset($_GET['number'])) {
+                    $number = explode(',', $_GET['number']);
+                    $sumPositivos = 0;
+                    $totalNegativos = 0;
+
+                    for ($i = 0; $i < $count; $i++) {
+                        $numero = $number[$i];
+
+                        if ($number > 0) {
+                            $sumPositivos += $number;
+                        } elseif ($number < 0) {
+                            $totalNegativos++;
+                        }
+                    }
+
+                    echo 'Números positivos é: ' . $sumPositivos ;
+                    echo 'Números negativos é: ' . $totalNegativos ;
+
+                  }
+
+                ?>
+
         </body>
 </html>            
