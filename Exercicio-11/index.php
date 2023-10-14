@@ -10,16 +10,14 @@
        <body>
             <div class="form">
                 <h1 class="title"> Exercício 11</h1> 
-                <div class="text">Ler um número inteiro entre 1 e 12 e escrever
-                            o mês correspondente. Caso o número seja
-                            fora desse intervalo, informar que não existe
-                            mês com este número
+                <div class="text">Criar um algoritmos que imprima a tabuada
+                                   de um número.
                 </div>
 
                 <form id="form" action="/Exercicio-11/index.php" method="post">
                     <div class="input-field"></div>
-                    <label for="number" class="sub">Mês:</label>
-                    <input type="number" class="input" name="Mes" id="value" placeholder="Escolha um valor..."/>
+                    <label for="number" class="sub">Número:</label>
+                    <input type="number" class="input" name="number" id="number" placeholder="Escolha um valor..."/>
                     <div class="underline"></div>
                     <input type="submit" class="button" name="enviar" value="Enviar"/> 
                 </form>
