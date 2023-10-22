@@ -72,34 +72,24 @@
                         o aluno somente 3 dias. </div>
               <form id="form" action="/Exercicio-7/index.php" method="post">
                     <label for="select" class="sub">Selecione:</label>  
-                    <div class="ls-custom-select">
-                    <select  class="ls-custom-select">
-                        <option value="professor">Professor</option>
-                        <option value="aluno">Aluno</option>
-                    </select>
-                    </div>
-                    <div class="input-field"></div>  
-                    <label for="text" class="sub">Livro:</label>  
-                    <input type="text" class="placeholder" name="livro" id="livro"  placeholder="..."/>
-                    <input type="submit" class="button" name="enviar" value="Enviar"/> 
-             </form>
-
-             <?php
-                if(isset($_POST['professor']) && ($_POST['aluno']) && ($_POST['livro'])) {    
-
-                  $professor= $_POST['professor'];
-                  $aluno= $_POST['aluno'];
-                  $livro= $_POST['livro'];
-
-                  if ($professor=="professor") {
-                  echo "$professor-- 10 DIAS PARA DEVOLUÇÃO DO $livro!";
+                    <div class="ls-custom-select"> 
+                    <select class="ls-custom-select" name= "selecione">
+                    <option>Professor</option>
+                    <option>Aluno</option>   
+                </select>    
+                  </div>
+                  <input type= "submit" value= "Enviar" class= "button"> 
+              </form>
+              <?php
+                  if (array_key_exists('selecione', $_POST)) {
+                           $selecione = $_POST ['selecione'];
+                          if ($selecione== "Professor") {
+                              echo "Devolução é de 10 dias a partir de hoje";
+                          }
+                          if ($selecione == "Aluno") {
+                              echo "Devolução é de 3 dias a partir de hoje";
+                          }
                   }
-                
-                  if ($aluno=="aluno") {
-                    echo "$aluno-- 3 DIAS PARA DEVOLUÇÃO DO $livro!";
-                    }
-
-                } 
              ?>
 
         </div>
