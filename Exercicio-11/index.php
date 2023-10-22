@@ -21,5 +21,15 @@
                     <div class="underline"></div>
                     <input type="submit" class="button" name="enviar" value="Enviar"/> 
                 </form>
+                <?php
+                    if (isset($_POST["number"])) {
+                        $number = $_POST["number"];
+                        echo "Tabuada $number:";
+                        for ($i = 1; $i <= 10; $i++) {
+                            $resuls = $number * $i;
+                            echo "$number  x   $i $results";
+                        }
+                    }
+             ?>
         </body>
 </html>
