@@ -26,24 +26,22 @@
                 </form>
              
                  <?php
-                  if (isset( $_POST['ladoA' ]) && isset($_POST ['ladoB' ]) && isset($_POST ['ladoC' ])){
-                    
-                      $ladoA= $_POST['ladoA'];
+                  if(isset($_POST['ladoA']) && isset($_POST['ladoB']) && isset($_POST['ladoC'])) {
+                      $ladoA = $_POST['ladoA'];
                       $ladoB= $_POST['ladoB'];
-                      $ladoC= $_POST['ladoC'];
-
-                    
-                      switch($ladoA && $ladoB && $ladoC ){
-                        case 'ladoA == ladoB == ladoC':
-                        echo "TRIÂNGULO EQUÍLATERO";
-                        break;
-                        case 'ladoA = ladoC == ladoA':
-                        echo "TRIÂNGULO ESCALENO";
-                        break;
-                        case 'ladoA == ladoB && ladoA == ladoC':
-                        echo  "TRIÂNGULO ISÓSCELES";
+                      $ladoC = $_POST['ladoC'];
+                        
+                      if (($ladoA == $ladoB) && ($ladoB == $ladoC)) {
+                              echo  'TRIÂNGULO EQUILATERO';
+                          } 
+                          else if (($ladoA!= $ladoB )&& ($ladoA != $ladoC) && ($ladoB != $ladoC)) {
+                              echo 'TRIÂNGULO ESCALENO';
+                          } 
+                          else {
+                              echo 'TRIÂNGULO ISÓSCELES';
+                          }
                       }
-                  }
+                
                  ?>
                
             </div>
