@@ -1,0 +1,83 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #b4c6e9 , #7bacd4);
+}
+
+.form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(238, 231, 231);
+    border-radius: 10px;
+    padding: 60px;
+    font-family: initial;
+    width: min-content;
+    align-items: center;
+    color: #010111;
+    padding: 14px;
+    border: 9px solid #020e2e;
+    box-shadow: #042f80 0px 0px 12px 1px inset,
+    #100f1a 0px 0px 12px 1px;  
+}
+
+.sub{
+    font-size: 1.5em;
+    font-family:inherit;
+}
+
+
+.title{
+    color: rgba(255, 255, 255, .1);
+    background: linear-gradient(to right,
+            rgb(76, 217, 105),
+            rgb(52, 170, 220),
+            rgb(88, 86, 217),
+            rgb(255, 45, 83),
+            rgb(88, 86, 217),
+            rgb(52, 170, 220),
+            rgb(76, 217, 105));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 200;
+    font-size: 2em;
+    text-align: left;
+    animation: sTransition 10s linear infinite;
+}
+
+@keyframes sTransition {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.input{
+  background: transparent;
+    border: none;
+    outline: none;
+    bottom: 0;
+}
+
+.button{
+   border: 5px solid #2c043f;
+   border-radius: 5px;
+   padding: 2px, 3px;
+   display: inline-block;
+   font-family: unset;
+   user-select: none;
+   color: #010307;
+   box-shadow: #8194b8 4px 4px 0px;
+   transition: all .195s ease-in-out;
+   cursor: pointer;
+}
+
+.button:hover{
+    transform: translateX(6px) translateY(6px);
+    box-shadow: #0c0c0c 8px 10px 0px;
+}
