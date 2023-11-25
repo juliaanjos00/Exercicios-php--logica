@@ -26,17 +26,16 @@
               <?php
 
                 if (isset($_GET['value'])) {
-                 $value = $_GET['value'];
-                 $numero = 1;
-         
-                  echo "1 a $value:";
-                  for ($i = 1; $i <= $value; $i++) {
-                  echo "$i";
-                 $numero*= $i;
-                 }
-    
-               echo ": $numero";
-              }
+                  $value = $_GET['value'];
+                  $numero = 1;
+
+                    echo "1 a $value:";
+                     for ($i = 1; $i <= $value; $i++) {
+                     echo "$i";
+                     $numero*= $i;
+                    }
+                     echo ": $numero";
+                }
        
              ?>
 
