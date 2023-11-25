@@ -16,7 +16,7 @@
                 </h3>
                 <form action="/Exercicio-9/index.php" method="post">
                   <div class="input-field"></div>
-                  <label for="number">Escolha um número:</label>
+                  <label for="number">Escolha um número</label>
                   <input type="number" class="input" name="number" id="number" placeholder="Escolha um valor..."/> 
                   <div class="underline"></div>
                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
