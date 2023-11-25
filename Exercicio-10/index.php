@@ -16,7 +16,7 @@
 
                 <form id="form" action="/Exercicio-10/index.php" method="post">
                   <div class="input-field"></div>
-                  <label for="number">Escolha 20 números:</label>
+                  <label for="number">Digite:</label>
                   <input type="number" class="input" name="number" id="number" placeholder="Escolha um valor..."/>
                   <div class="underline"></div>
                   <input type="submit" class="button" name="enviar" value="Enviar"/> 
