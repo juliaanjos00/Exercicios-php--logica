@@ -34,7 +34,7 @@
                      echo "$i";
                      $numero*= $i;
                     }
-                     echo ": $numero";
+                     echo "O produto do $numero é:";
                 }
        
              ?>
